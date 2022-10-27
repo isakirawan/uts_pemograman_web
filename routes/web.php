@@ -27,7 +27,4 @@ Route::group(['prefix'=>'mahasiswa'], function(){
     Route::get('/nilai', function () {
     	return 'Halaman Nilai';
 	});
-    Route::get('/nilai1', function () {
-    	return 'Halaman Nilai1';
-	});
 });
