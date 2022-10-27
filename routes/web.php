@@ -13,18 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-// Route::group(['prefix'=>'mahasiswa'], function(){
-//     Route::get('/pendaftaran', function () {
-//     	return 'Halaman Pendaftaran';
-// 	});
-//     Route::get('/ujian', function () {
-//     	return 'Halaman Ujian';
-// 	});
-//     Route::get('/nilai', function () {
-//     	return 'Halaman Nilai';
-// 	});
+// Route::get('/', function () {
+//     return view('welcome');
 // });
+
+Route::group(['prefix'=>'mahasiswa'], function(){
+    Route::get('/pendaftaran', function () {
+    	return 'Halaman Pendaftaran';
+	});
+    Route::get('/ujian', function () {
+    	return 'Halaman Ujian';
+	});
+    Route::get('/nilai', function () {
+    	return 'Halaman Nilai';
+	});
+});
